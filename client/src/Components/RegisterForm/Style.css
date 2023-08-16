@@ -1,0 +1,39 @@
+.bars {
+    /* margin: 8px 0; */
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+    height: 6px;
+    border-radius: 3px;
+    background: #dfe1f0;
+  }
+  
+  .bars div {
+    height: 6px;
+    border-radius: 3px;
+    transition: 0.4s;
+    width: 0%;
+  }
+  
+  .bars.weak div {
+    background: #e24c71;
+    width: 33.33%;
+  }
+  
+  .bars.medium div {
+    background: #f39845;
+    width: 66.66%;
+  }
+  
+  .bars.strong div {
+    background: #57c558;
+    width: 100%;
+  }
+  
+  .strength {
+    text-align: left;
+    height: 15px;
+    text-transform: capitalize;
+    color: #616162;
+  }
